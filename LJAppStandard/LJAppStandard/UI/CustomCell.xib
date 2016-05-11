@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" rowHeight="112" id="KGk-i7-Jjw" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exs-Gq-DNq">
+                        <rect key="frame" x="23" y="15" width="80" height="81"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="d7u-Mn-FS2"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="btnclick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RTh-2l-lbA"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL7-Mq-cGR">
+                        <rect key="frame" x="123" y="45" width="177" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="exs-Gq-DNq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5o6-8M-EQM"/>
+                    <constraint firstItem="TL7-Mq-cGR" firstAttribute="centerY" secondItem="exs-Gq-DNq" secondAttribute="centerY" id="Egf-zV-pCU"/>
+                    <constraint firstItem="exs-Gq-DNq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="RVo-t5-lng"/>
+                    <constraint firstAttribute="trailing" secondItem="TL7-Mq-cGR" secondAttribute="trailing" constant="20" id="Rfj-hy-mqm"/>
+                    <constraint firstAttribute="bottom" secondItem="exs-Gq-DNq" secondAttribute="bottom" constant="15" id="hCQ-Sm-guX"/>
+                    <constraint firstItem="TL7-Mq-cGR" firstAttribute="leading" secondItem="exs-Gq-DNq" secondAttribute="trailing" constant="20" id="pen-A5-b9V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="381" y="338"/>
+        </tableViewCell>
+    </objects>
+</document>

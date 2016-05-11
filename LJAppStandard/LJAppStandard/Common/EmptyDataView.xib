@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmptyDataView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyData" translatesAutoresizingMaskIntoConstraints="NO" id="eJX-zk-9dv">
+                    <rect key="frame" x="213" y="219" width="175" height="163"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162.5" id="e1M-d5-bHW"/>
+                        <constraint firstAttribute="width" constant="175" id="lWO-gL-Rvp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="虾米也没有" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hF9-9i-zD1">
+                    <rect key="frame" x="265" y="412" width="70" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eJX-zk-9dv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7pb-5M-cFn"/>
+                <constraint firstItem="hF9-9i-zD1" firstAttribute="top" secondItem="eJX-zk-9dv" secondAttribute="bottom" constant="30" id="PV5-nt-L1Z"/>
+                <constraint firstItem="eJX-zk-9dv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TMG-L4-7Ax"/>
+                <constraint firstItem="hF9-9i-zD1" firstAttribute="centerX" secondItem="eJX-zk-9dv" secondAttribute="centerX" id="a41-j9-jp1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLB" destination="hF9-9i-zD1" id="grf-wo-oKd"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="EmptyData" width="350" height="325"/>
+    </resources>
+</document>

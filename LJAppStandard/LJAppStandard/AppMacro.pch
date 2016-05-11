@@ -1,0 +1,76 @@
+//
+//  AppMacro.pch
+//  LJAppStandard
+//
+//  Created by liang on 16/4/10.
+//  Copyright © 2016年 liang. All rights reserved.
+//
+
+#ifndef AppMacro_pch
+#define AppMacro_pch
+
+#import "Singleton.h"
+#import "LJNetWorkingTools.h"
+
+#import "UIView+YYAdd.h"
+#import "NSString+Common.h"
+#import "UIColor+Common.h"
+#import "MBProgressHUD+Show.h"
+
+//Usefull Tools
+//#import "FSPathTools.h"
+//#import "FSCacheTools.h"
+//#import "FSStringTools.h"
+//#import "FSDeviceTools.h"
+//#import "PositionTools.h"
+#import "UICreator.h"
+
+#define kc00_ff0000      @"#ff0000"
+#define kc00_333333      @"#333333"
+#define kc00_f5f5f5      @"#f5f5f5"
+
+#define themeFont(x) [UIFont systemFontOfSize:x]
+#define themeFont20  [UIFont systemFontOfSize:20.0f]
+#define themeFont19  [UIFont systemFontOfSize:19.0f]
+#define themeFont18  [UIFont systemFontOfSize:18.0f]
+#define themeFont17  [UIFont systemFontOfSize:17.0f]
+#define themeFont16  [UIFont systemFontOfSize:16.0f]
+#define themeFont15  [UIFont systemFontOfSize:15.0f]
+#define themeFont14  [UIFont systemFontOfSize:14.0f]
+#define themeFont13  [UIFont systemFontOfSize:13.0f]
+#define themeFont12  [UIFont systemFontOfSize:12.0f]
+#define themeFont11  [UIFont systemFontOfSize:11.0f]
+#define themeFont10  [UIFont systemFontOfSize:10.0f]
+#define themeFont9   [UIFont systemFontOfSize:9.0f]
+
+#define knavBJColor  @"#2cc490"
+#define kviewBJColor @"#f0eff4"
+#define KcolorWhite  @"#ffffff"
+
+#define DeviceRect   [UIScreen mainScreen].bounds
+#define DeviceHeight [UIScreen mainScreen].bounds.size.height
+#define DeviceWidth  [UIScreen mainScreen].bounds.size.width
+
+#define kVersion     [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+// 项目打包上线都不会打印日志，因此可放心。
+#ifdef DEBUG
+#define NSLog(s, ... ) NSLog( @"[%@：in line: %d]-->%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define NSLog(s, ... )
+#endif
+
+
+/** 快速查询一段代码的执行时间 */
+/** 用法
+ TICK
+ do your work here
+ TOCK
+ */
+
+#define TICK NSDate *startTime = [NSDate date];
+#define TOCK NSLog(@"Time:%f", -[startTime timeIntervalSinceNow]);
+
+
+#define LoginStatusChangeNoti   @"LoginStatusChangeNoti"
+#endif
