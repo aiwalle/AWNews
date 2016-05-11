@@ -16,15 +16,15 @@
 /**
  *  初始化导航栏
  */
-+ (void)initialize{
+//+ (void)initialize{
     /** 设置UINavigationBar */
-    UINavigationBar *bar = [UINavigationBar appearance];
-    // 设置背景图
-    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
-    // 设置标题文字属性
-    NSMutableDictionary *barAttrs = [NSMutableDictionary dictionary];
-    barAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
-    [bar setTitleTextAttributes:barAttrs];
+//    UINavigationBar *bar = [UINavigationBar appearance];
+//    // 设置背景图
+//    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+//    // 设置标题文字属性
+//    NSMutableDictionary *barAttrs = [NSMutableDictionary dictionary];
+//    barAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+//    [bar setTitleTextAttributes:barAttrs];
     
     /** 设置UIBarButtonItem */
 //    UIBarButtonItem *item = [UIBarButtonItem appearance];
@@ -44,7 +44,7 @@
 //    [bar setTintColor:[UIColor colorWithHexString:KcolorWhite]];
 //    [bar setBarTintColor:[UIColor colorWithHexString:knavBJColor]];
 //    bar.translucent = NO;
-}
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

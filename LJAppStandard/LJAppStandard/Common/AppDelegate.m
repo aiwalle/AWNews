@@ -50,7 +50,7 @@ static NSString *ShareSDKKey = @"11f03685d720c";
     [self umengTrack];
     [self setupShareSDK];
     
-    [self setupAdvertisement];
+//    [self setupAdvertisement];
     return YES;
 }
 

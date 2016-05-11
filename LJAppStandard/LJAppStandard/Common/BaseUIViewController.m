@@ -58,13 +58,20 @@
  *  self.navigationItem.title = @""; 也可以通过这种来设置标题，只是无法自定义样式
  */
 - (void)setupTitleView{
-    if (![self.navTitleText isEmpty] && [self.navigationController.viewControllers count] > 1) {
-        // push出来的为灰色字体
-        [self setupNavTitleWithColorHex:@"#333333"];
-    }else if (![self.navTitleText isEmpty] && [self.navigationController.viewControllers count] == 1){
-        // 基础的为白色字体
-        [self setupNavTitleWithColorHex:@"#ffffff"];
-    }
+//    if (![self.navTitleText isEmpty] && [self.navigationController.viewControllers count] > 1) {
+//        // push出来的为灰色字体
+//        [self setupNavTitleWithColorHex:@"#333333"];
+//    }else if (![self.navTitleText isEmpty] && [self.navigationController.viewControllers count] == 1){
+//        // 基础的为白色字体
+//        [self setupNavTitleWithColorHex:@"#ffffff"];
+//    }
+    
+    
+    UIImageView *titleIV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_title"]];
+    titleIV.frame = CGRectMake(0, 0, 51, 24);
+    [self.navigationItem setTitleView:titleIV];
+    self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:@"#dd3237"]];
 }
 
 /** 设置Label样式*/
